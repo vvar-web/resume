@@ -337,17 +337,19 @@ h2.section-title:after {
 }
 
 .timeline-skills {
-  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .timeline-skills span {
-  padding: 0.3rem 0.8rem;
-  background: rgba(255, 102, 196, 0.2);
-  border-radius: 20px;
-  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
