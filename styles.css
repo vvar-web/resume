@@ -785,55 +785,5 @@ footer {
 }
 
 
-/* Additional responsive design tweaks for better scaling on phones */
-@media (max-width: 480px) {
-  /* Adjusting hero section for better view */
-  header.hero {
-    height: auto;
-    padding: 20px;
-  }
-
-  .title {
-    font-size: 2.5rem; /* Smaller font size for phones */
-  }
-
-  .title span {
-    font-size: 4rem; /* Adjusted for scaling */
-  }
-
-  .subtitle {
-    font-size: 1rem; /* Smaller subtitle */
-  }
-
-  /* Navbar adjustments */
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.5rem; /* Reduce gap for compact layout */
-  }
-
-  .navbar a {
-    font-size: 0.8rem; /* Smaller font size for links */
-  }
-
-  /* Section padding reduced for phones */
-  section {
-    padding: 2rem 1rem;
-  }
-
-  /* Adjusting grid layouts for single-column view */
-  .about-content,
-  .stats-container,
-  .contact-wrapper {
-    grid-template-columns: 1fr; /* Single column */
-  }
-
-  /* Reducing project card size for phones */
-  .project-card {
-    flex: 0 1 100%; /* Single column layout */
-  }
-
-  /* Footer adjustments */
-  footer {
-    padding: 2rem 1rem; /* Compact padding */
   }
 }
