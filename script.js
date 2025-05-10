@@ -96,21 +96,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    let lastScrollTop = 0;
-    const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', function() {
+  // Only apply the hiding behavior on mobile devices
+  if (window.innerWidth <= 768) {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
-    window.addEventListener('scroll', function() {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
-      if (scrollTop > lastScrollTop && scrollTop > 100) {
-        // Scrolling down & past the initial 100px
-        navbar.classList.add('hidden');
-      } else {
-        // Scrolling up
-        navbar.classList.remove('hidden');
-      }
-      
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
-  });
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      // Scrolling down & past the initial 100px
+      navbar.classList.add('hidden');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('hidden');
+    }
+    
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  } else {
+    // On desktop, always ensure navbar is visible
+    navbar.classList.remove('hidden');
+  }
+});
