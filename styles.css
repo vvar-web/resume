@@ -28,13 +28,13 @@ body {
 }
 
 a {
-  color: #ff66c4;
+  color: #00ccff; /* GTA 5 bright cyan */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffcc00;
+  color: #ff9900; /* GTA 5 orange */
 }
 
 /* Hero section */
@@ -70,7 +70,7 @@ header.hero {
   font-family: 'Pricedown', sans-serif;
   font-size: clamp(3rem, 8vw, 6rem);
   color: #fff;
-  text-shadow: 0 0 10px rgba(255, 102, 196, 0.7);
+  text-shadow: 0 0 10px rgba(0, 204, 255, 0.7); /* GTA 5 cyan glow */
   letter-spacing: 4px;
   line-height: 1;
   animation: titleGlow 3s infinite alternate;
@@ -79,7 +79,7 @@ header.hero {
 .title span {
   display: block;
   font-size: clamp(5rem, 12vw, 10rem);
-  color: #ffcc00;
+  color: #ff9900; /* GTA 5 orange */
   margin-top: -20px;
 }
 
@@ -117,7 +117,7 @@ header.hero {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid rgba(255, 102, 196, 0.3);
+  border-bottom: 1px solid rgba(0, 204, 255, 0.3); /* GTA 5 cyan border */
   overflow-x: auto;
 }
 
@@ -141,7 +141,7 @@ header.hero {
 }
 
 .navbar a:hover {
-  color: #ffcc00;
+  color: #ff9900; /* GTA 5 orange */
 }
 
 .navbar a:after {
@@ -151,7 +151,7 @@ header.hero {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background: #ff66c4;
+  background: #00ccff; /* GTA 5 cyan */
   transition: all 0.3s ease;
 }
 
@@ -187,7 +187,7 @@ section:nth-child(even) {
 }
 
 h2.section-title {
-  color: #ffcc00;
+  color: #ff9900; /* GTA 5 orange */
   margin-bottom: 2rem;
   font-size: clamp(2.3rem, 5vw, 3rem);
   text-transform: uppercase;
@@ -205,7 +205,7 @@ h2.section-title:after {
   left: 0;
   width: 80px;
   height: 4px;
-  background: #ff66c4;
+  background: #00ccff; /* GTA 5 cyan */
 }
 
 /* About Section */
@@ -220,7 +220,7 @@ h2.section-title:after {
   position: relative;
   height: 500px;
   overflow: hidden;
-  border: 3px solid rgba(255, 102, 196, 0.3);
+  border: 3px solid rgba(0, 204, 255, 0.3); /* GTA 5 cyan border */
 }
 
 .about-image img {
@@ -248,14 +248,14 @@ h2.section-title:after {
   text-align: center;
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 102, 196, 0.2);
+  border: 1px solid rgba(0, 204, 255, 0.2); /* GTA 5 cyan border */
   border-radius: 5px;
 }
 
 .stat-value {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ff66c4;
+  color: #00ccff; /* GTA 5 cyan */
   margin-bottom: 0.5rem;
 }
 
@@ -278,7 +278,7 @@ h2.section-title:after {
   bottom: 0;
   left: 50%;
   width: 4px;
-  background: rgba(255, 102, 196, 0.3);
+  background: rgba(0, 204, 255, 0.3); /* GTA 5 cyan */
   transform: translateX(-50%);
 }
 
@@ -296,7 +296,7 @@ h2.section-title:after {
   width: 45%;
   padding: 2rem;
   background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 102, 196, 0.2);
+  border: 1px solid rgba(0, 204, 255, 0.2); /* GTA 5 cyan border */
   border-radius: 5px;
   position: relative;
 }
@@ -307,7 +307,7 @@ h2.section-title:after {
   top: 25px;
   width: 20px;
   height: 20px;
-  background: #ffcc00;
+  background: #ff9900; /* GTA 5 orange */
   border-radius: 50%;
 }
 
@@ -320,14 +320,14 @@ h2.section-title:after {
 }
 
 .timeline-date {
-  color: #ff66c4;
+  color: #00ccff; /* GTA 5 cyan */
   font-weight: bold;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
 }
 
 .timeline-title {
-  color: #ffcc00;
+  color: #ff9900; /* GTA 5 orange */
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
@@ -345,7 +345,7 @@ h2.section-title:after {
 
 .timeline-skills span {
   padding: 0.3rem 0.8rem;
-  background: rgba(255, 102, 196, 0.2);
+  background: rgba(0, 204, 255, 0.2); /* GTA 5 cyan background */
   border-radius: 20px;
   font-size: 0.8rem;
   white-space: nowrap;
@@ -364,7 +364,7 @@ h2.section-title:after {
   flex: 0 1 calc(33.333% - 1.33rem);
   min-width: 280px;
   background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 102, 196, 0.2);
+  border: 1px solid rgba(0, 204, 255, 0.2); /* GTA 5 cyan border */
   border-radius: 5px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -372,7 +372,7 @@ h2.section-title:after {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(255, 102, 196, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 204, 255, 0.2); /* GTA 5 cyan glow */
 }
 
 .project-image {
@@ -397,7 +397,7 @@ h2.section-title:after {
 }
 
 .project-title {
-  color: #ffcc00;
+  color: #ff9900; /* GTA 5 orange */
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -434,7 +434,7 @@ h2.section-title:after {
 }
 
 .contact-info h3 {
-  color: #ffcc00;
+  color: #ff9900; /* GTA 5 orange */
   margin-bottom: 2rem;
   font-size: 1.8rem;
 }
@@ -449,7 +449,7 @@ h2.section-title:after {
 .contact-icon {
   width: 50px;
   height: 50px;
-  background: rgba(255, 102, 196, 0.2);
+  background: rgba(0, 204, 255, 0.2); /* GTA 5 cyan background */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -460,7 +460,7 @@ h2.section-title:after {
 .contact-icon svg {
   width: 24px;
   height: 24px;
-  fill: #ff66c4;
+  fill: #00ccff; /* GTA 5 cyan */
 }
 
 .contact-text h4 {
@@ -483,7 +483,7 @@ h2.section-title:after {
 .social-links a {
   width: 50px;
   height: 50px;
-  background: rgba(255, 102, 196, 0.2);
+  background: rgba(0, 204, 255, 0.2); /* GTA 5 cyan background */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -492,7 +492,7 @@ h2.section-title:after {
 }
 
 .social-links a:hover {
-  background: #ff66c4;
+  background: #00ccff; /* GTA 5 cyan */
 }
 
 .social-links a svg {
@@ -503,7 +503,7 @@ h2.section-title:after {
 
 .contact-form {
   background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 102, 196, 0.2);
+  border: 1px solid rgba(0, 204, 255, 0.2); /* GTA 5 cyan border */
   border-radius: 5px;
   padding: 2rem;
 }
@@ -522,7 +522,7 @@ h2.section-title:after {
   width: 100%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 102, 196, 0.2);
+  border: 1px solid rgba(0, 204, 255, 0.2); /* GTA 5 cyan border */
   border-radius: 5px;
   color: #fff;
   font-family: inherit;
@@ -531,7 +531,7 @@ h2.section-title:after {
 
 .form-control:focus {
   outline: none;
-  border-color: #ff66c4;
+  border-color: #00ccff; /* GTA 5 cyan */
 }
 
 .form-control::placeholder {
@@ -546,8 +546,8 @@ textarea.form-control {
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  background: #ff66c4;
-  color: #fff;
+  background: #00ccff; /* GTA 5 cyan */
+  color: #000; /* Black text for better contrast on cyan */
   border: none;
   border-radius: 5px;
   font-family: inherit;
@@ -559,8 +559,9 @@ textarea.form-control {
 }
 
 .btn:hover {
-  background: #ffcc00;
+  background: #ff9900; /* GTA 5 orange */
   transform: translateY(-3px);
+  color: #000; /* Keep black text for contrast */
 }
 
 /* Footer */
@@ -579,7 +580,7 @@ footer {
 .footer-logo {
   font-family: 'Pricedown', sans-serif;
   font-size: 2rem;
-  color: #ffcc00;
+  color: #ff9900; /* GTA 5 orange */
   margin-bottom: 1rem;
 }
 
@@ -626,15 +627,16 @@ footer {
   border-radius: 10px;
   width: 90%;
   max-width: 400px;
+  border: 1px solid #00ccff; /* GTA 5 cyan border */
 }
 
 /* Animations */
 @keyframes titleGlow {
   0% {
-    text-shadow: 0 0 5px rgba(255, 102, 196, 0.5);
+    text-shadow: 0 0 5px rgba(0, 204, 255, 0.5); /* GTA 5 cyan glow */
   }
   100% {
-    text-shadow: 0 0 20px rgba(255, 102, 196, 0.8), 0 0 30px rgba(255, 102, 196, 0.5);
+    text-shadow: 0 0 20px rgba(0, 204, 255, 0.8), 0 0 30px rgba(0, 204, 255, 0.5); /* GTA 5 cyan glow */
   }
 }
 
@@ -680,12 +682,12 @@ footer {
   background: rgba(17, 25, 40, 0.7);
   backdrop-filter: blur(8px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 204, 255, 0.1); /* GTA 5 cyan border */
 }
 
 /* Neon glow effect */
 .neon-glow {
-  text-shadow: 0 0 5px rgba(255, 102, 196, 0.8), 0 0 10px rgba(255, 102, 196, 0.5);
+  text-shadow: 0 0 5px rgba(0, 204, 255, 0.8), 0 0 10px rgba(0, 204, 255, 0.5); /* GTA 5 cyan glow */
 }
 
 /* Mobile-first responsive design */
@@ -804,5 +806,86 @@ footer {
 @media (max-width: 768px) {
   .parallax {
     background-attachment: scroll;
+  }
+}
+
+
+
+/* Improved Navbar Mobile Styling */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+    position: sticky;
+    max-height: 60px; /* Limit height on mobile */
+    overflow: auto;
+  }
+  
+  .navbar ul {
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 5px; /* Space for scrollbar */
+    flex-direction: row; /* Keep horizontal, but scrollable */
+  }
+  
+  .navbar a {
+    font-size: 0.75rem;
+    padding: 0.2rem 0;
+    white-space: nowrap;
+  }
+}
+
+/* Improved Timeline Skills Mobile Styling */
+@media (max-width: 768px) {
+  .timeline-skills {
+    gap: 0.3rem;
+  }
+  
+  .timeline-skills span {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+}
+
+/* Additional mobile improvements */
+@media (max-width: 576px) {
+  .timeline-date {
+    font-size: 0.9rem;
+  }
+  
+  .timeline-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* Remove the column stacking for navbar on smallest screens */
+  .navbar ul {
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+}
+
+/* Further micro-adjustments for extra small screens */
+@media (max-width: 380px) {
+  .timeline-skills span {
+    padding: 0.15rem 0.4rem;
+    font-size: 0.65rem;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
   }
 }
