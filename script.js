@@ -95,3 +95,25 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.style.overflow = "auto"; // Restore scrolling
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const navbarMenu = document.querySelector('.navbar ul');
+  
+  mobileMenuToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  });
+  
+  // Close menu when clicking on a link
+  const navLinks = document.querySelectorAll('.navbar ul a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      mobileMenuToggle.classList.remove('active');
+      navbarMenu.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+});
