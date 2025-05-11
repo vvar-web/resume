@@ -237,11 +237,15 @@ h2.section-title:after {
   margin-bottom: 1.5rem;
 }
 
+/* Improved Stats Container Scaling */
+
+/* Base styles that work well at all sizes */
 .stats-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
   margin-top: 3rem;
+  width: 100%;
 }
 
 .stat-item {
@@ -250,22 +254,60 @@ h2.section-title:after {
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(0, 204, 255, 0.2); /* GTA 5 cyan border */
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
 }
 
 .stat-value {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 3vw, 2.5rem); /* Responsive font size */
   font-weight: bold;
   color: #00ccff; /* GTA 5 cyan */
   margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .stat-label {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1vw, 0.9rem); /* Responsive font size */
   color: #ddd;
+  line-height: 1.4;
 }
 
+/* Specific desktop enhancements */
+@media (min-width: 992px) {
+  .stats-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Specific mobile enhancements */
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-item {
+    padding: 1.2rem 1rem;
+    min-height: 120px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* Experience Section */
 .experience-timeline {
   position: relative;
