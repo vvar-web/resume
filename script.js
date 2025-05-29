@@ -120,31 +120,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Initialize EmailJS
-emailjs.init("KvLffnXVU2CwQHvJr"); // Replace with your actual public key
-
+emailjs.init("KvLffnXVU2CwQHvJr");
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    // Change button text to show loading
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-    
-    // Send the email
-    emailjs.sendForm('service_ha4qxab', 'template_a5be9wo', this)
-        .then(function() {
-            alert('Message sent successfully!');
-            document.getElementById('contact-form').reset();
-        })
-        .catch(function(error) {
-            alert('Failed to send message. Please try again.');
-            console.error('EmailJS error:', error);
-        })
-        .finally(function() {
-            // Reset button
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        });
+   event.preventDefault();
+   
+   // Change button text to show loading
+   const submitBtn = this.querySelector('button[type="submit"]');
+   const originalText = submitBtn.textContent;
+   submitBtn.textContent = 'Sending...';
+   submitBtn.disabled = true;
+   
+   // Send the email
+   emailjs.sendForm('service_ha4qxab', 'template_a5be9wo', this)
+       .then(function() {
+           document.getElementById('contact-form').reset();
+       })
+       .catch(function(error) {
+           console.error('EmailJS error:', error);
+       })
+       .finally(function() {
+           // Reset button
+           submitBtn.textContent = originalText;
+           submitBtn.disabled = false;
+       });
 });
